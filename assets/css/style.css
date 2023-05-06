@@ -1,0 +1,168 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(180deg, #2ec4b6, #9eb1e9);
+  overflow-x: hidden;
+}
+
+.container {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  height         : 100vh;
+}
+
+.inbox {
+  background   : #edf2f4;
+  width        : 650px;
+  height       : 450px;
+  display      : flex;
+  border-radius: 4px;
+}
+
+.inbox aside {
+  background: #43d3c5;
+  flex      : 1 1 auto;
+  height    : 100%;
+}
+
+.inbox aside .avatar {
+  width        : 30px;
+  height       : 30px;
+  border       : 2px solid #fff;
+  border-radius: 100%;
+}
+
+.inbox aside li {
+  background            : #36d0c2;
+  list-style            : none;
+  color                 : #fff;
+  display               : flex;
+  justify-content       : space-between;
+  padding               : 0 2em;
+  align-items           : center;
+  height                : 5em;
+  font-size             : 0.8em;
+  cursor                : pointer;
+  border-bottom         : 1px solid #4bd5c8;
+  border-top-left-radius: 4px;
+}
+
+.inbox aside li:hover {
+  background: #30ccbe;
+}
+
+.inbox main {
+  background                : #edf2f4;
+  height                    : 100%;
+  flex                      : 1 1 70%;
+  border-top-right-radius   : 4px;
+  border-bottom-right-radius: 4px;
+  transform                 : scale(1.035);
+}
+
+.inbox main .message-wrap {
+  height    : 88%;
+  overflow-y: scroll;
+}
+
+.inbox main .message-user {
+  background   : #43d3c5;
+  width        : 70%;
+  margin       : 1em 4em;
+  padding      : 1em;
+  border-radius: 4px;
+  opacity      : 1;
+  transition   : opacity ease-in-out 0.45s;
+}
+
+.inbox main .message-bot {
+  background   : #43d3c5;
+  width        : 70%;
+  margin       : 1em 6em;
+  padding      : 1em;
+  border-radius: 4px;
+  opacity      : 1;
+  transition   : opacity ease-in-out 0.45s;
+  margin-left  : 7em;
+}
+
+.inbox main .message-user p,
+.inbox main .message-bot p {
+  font-size  : 0.68em;
+  color      : #fff;
+  font-weight: 300;
+}
+
+.inbox main .message-bot .avatar {
+  font-size: 35px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  float: left;
+  transform: translateX(-90px) translateY(-10px);
+  -webkit-transform: translateX(-90px) translateY(-10px);
+  -moz-transform: translateX(-90px) translateY(-10px);
+  -ms-transform: translateX(-90px) translateY(-10px);
+  -o-transform: translateX(-90px) translateY(-10px);
+}
+
+.inbox main .message-user .user {
+  font-size: 35px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  float: right;
+  transform: translateX(70px) translateY(-30px);
+  -webkit-transform: translateX(70px) translateY(-30px);
+  -moz-transform: translateX(70px) translateY(-30px);
+  -ms-transform: translateX(70px) translateY(-30px);
+  -o-transform: translateX(70px) translateY(-30px);
+}
+
+.inbox main .message-user:nth-of-type(even) {
+  background: #2fc8ba;
+  margin    : 1em 1em;
+}
+
+.inbox main footer {
+  position   : fixed;
+  bottom     : 0;
+  height     : 12%;
+  width      : 100%;
+  display    : flex;
+  align-items: center;
+  border-top : 1px solid #c8c8c8;
+}
+
+.inbox main footer input[type="text"] {
+  border    : none;
+  background: transparent;
+  padding   : 0.8em;
+  outline   : none;
+  color     : #aaa;
+  width     : 100%;
+}
+
+.inbox main footer input[type="submit"] {
+  background   : #43d3c5;
+  color        : #fff;
+  width        : 17%;
+  border-radius: 4px;
+  padding      : 0.8em;
+  margin       : 0 1em;
+  border       : none;
+  cursor       : pointer;
+  appearance   : none;
+}
+
+.inbox main footer form {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+}

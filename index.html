@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOOTSTRAP -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container d-flex flex-column">
+    <div class="d-flex align-items-center justify-content-center mb-5 text-center">
+      <h1 class="text-white m-0 w-50">Chat de despitaje y derivacion del centro medico de San Martin de Porres en Lima
+        Metropolitana</h1>
+    </div>
+    <div class="inbox">
+      <aside>
+        <ul class="m-0 p-0">
+          <div ng-repeat="chat in chats">
+            <li ng-click="uid(chat.id)">
+              <i class="fa-solid fa-robot" style="font-size: 35px;"></i>
+              <p class="username align-middle text-center m-0">Bot de despistaje </p>
+            </li>
+          </div>
+        </ul>
+      </aside>
+      <main>
+        <div class="message-wrap">
+          <div class="message-user">
+            <p class="m-0">mensaje de usuario</p>
+            <i class="fa-solid fa-user-tie user"></i>
+          </div>
+
+          <div class="message-bot">
+            <i class="fa-solid fa-robot avatar"></i>
+            <p class="m-0">mensaje de bot</p>
+          </div>
+
+          <div class="message-user">
+            <p class="m-0">mensaje de usuario</p>
+            <i class="fa-solid fa-user-tie user"></i>
+          </div>
+        </div>
+        <footer>
+          <form>
+            <input placeholder="Enter a message" type="text"></input>
+            <input type="submit" value="Send"></input>
+          </form>
+        </footer>
+      </main>
+    </div>
+  </div>
+  <!-- BOOTSTRAP -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src=""></script>
+</body>
+
+</html>
