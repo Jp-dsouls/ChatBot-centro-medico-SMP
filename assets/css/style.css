@@ -69,6 +69,7 @@ body {
 .inbox main .message-wrap {
   height    : 88%;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .inbox main .message-user {
@@ -100,29 +101,29 @@ body {
 }
 
 .inbox main .message-bot .avatar {
-  font-size: 35px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  float: left;
-  transform: translateX(-90px) translateY(-10px);
+  font-size        : 35px;
+  width            : 40px;
+  height           : 40px;
+  border-radius    : 100%;
+  float            : left;
+  transform        : translateX(-90px) translateY(-10px);
   -webkit-transform: translateX(-90px) translateY(-10px);
-  -moz-transform: translateX(-90px) translateY(-10px);
-  -ms-transform: translateX(-90px) translateY(-10px);
-  -o-transform: translateX(-90px) translateY(-10px);
+  -moz-transform   : translateX(-90px) translateY(-10px);
+  -ms-transform    : translateX(-90px) translateY(-10px);
+  -o-transform     : translateX(-90px) translateY(-10px);
 }
 
 .inbox main .message-user .user {
-  font-size: 35px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  float: right;
-  transform: translateX(70px) translateY(-30px);
+  font-size        : 35px;
+  width            : 40px;
+  height           : 40px;
+  border-radius    : 100%;
+  float            : right;
+  transform        : translateX(70px) translateY(-30px);
   -webkit-transform: translateX(70px) translateY(-30px);
-  -moz-transform: translateX(70px) translateY(-30px);
-  -ms-transform: translateX(70px) translateY(-30px);
-  -o-transform: translateX(70px) translateY(-30px);
+  -moz-transform   : translateX(70px) translateY(-30px);
+  -ms-transform    : translateX(70px) translateY(-30px);
+  -o-transform     : translateX(70px) translateY(-30px);
 }
 
 .inbox main .message-user:nth-of-type(even) {
